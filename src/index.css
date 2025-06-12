@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.theme-light {
+  background-color: #f9fafb;
+  color: #1e293b;
+}
+body.theme-dark {
+  background-color: #18181b;
+  color: #f1f5f9;
+}
+body.theme-grey {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+/* Card and container backgrounds */
+.theme-dark .bg-white,
+.theme-dark .bg-gray-50 {
+  background-color: #23232a !important;
+  color: #f1f5f9 !important;
+}
+.theme-grey .bg-white,
+.theme-grey .bg-gray-50 {
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
+}
+
+/* Table, modal, and border overrides */
+.theme-dark .border,
+.theme-dark .border-gray-100,
+.theme-dark .border-gray-200 {
+  border-color: #2d2d36 !important;
+}
+.theme-dark .shadow,
+.theme-dark .shadow-xl,
+.theme-dark .shadow-lg {
+  box-shadow: 0 2px 8px 0 #00000033 !important;
+}
+
+/* Example: For deeper theme support, extend Tailwind config:
+   module.exports = {
+     darkMode: ['class', '.theme-dark'],
+     theme: {
+       extend: {
+         colors: {
+           darkbg: '#18181b',
+           darkcard: '#23232a',
+           darktext: '#f1f5f9',
+           greybg: '#e5e7eb',
+           greycard: '#f3f4f6',
+           greytext: '#374151',
+         },
+       },
+     },
+   }
+*/
