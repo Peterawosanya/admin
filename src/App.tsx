@@ -36,7 +36,7 @@ function App() {
           setSettingsPage={setSettingsPage}
           onLogoutConfirm={() => setIsAuthenticated(false)}
         />
-      </DashboardLayout>
+    </DashboardLayout>
     </ThemeProvider>
   );
 }
